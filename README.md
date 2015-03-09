@@ -13,7 +13,7 @@ You can install the stable version on
 install.packages('ibelief', dependencies = TRUE)
 ```
 
-Also you can download the source folder of the package and build the package yourselves:
+Also you can download the newest source folder of the package and build the package yourselves:
 
 ```bash
 git clone https://github.com/KuangZHOU/ibelief.git
