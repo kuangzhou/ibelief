@@ -27,9 +27,9 @@ Then you can install the package from source in R:
 install.packages("~/ibelief_*.tar.gz", repos = NULL, type = "source")
 ```
 
-## change information
+## Change information
 
-### ver 1.1
+### Changes in Version 1.1
 
-Add the function LCRule for creating bbas using Least-Commit Princple from probabilities
+1. Add a function LCRule() for creating bbas using Least-Commit Princple from probabilities.
 
