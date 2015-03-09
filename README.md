@@ -29,7 +29,7 @@ install.packages("~/ibelief_*.tar.gz", repos = NULL, type = "source")
 
 ## Change information
 
-### Changes in Version 1.1
+#### Changes in Version 1.1
 
 1. Add a function LCRule() for creating bbas using Least-Commit Princple from probabilities.
 
