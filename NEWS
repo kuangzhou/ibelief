@@ -7,6 +7,5 @@ ibelief 1.1
    
 * Fix the bug that qtow function could not work for dogmatic belief functions. 
 
-* Fix the bug that wtoq function could not produce an output 
+* Fix the bug that some FMT functions could not produce an output 
      
-* Fix the bug that wtom function could not produce an output 

@@ -232,6 +232,8 @@ pltob <- function(InputVec) {
     } else {
         stop("ACCIDENT InputVec btopl: length of InputVecput vector not OK: should be a power of 2\n")
     }
+
+	return(out)
 }
 
 ##' @export
@@ -434,5 +436,7 @@ vtob <- function(InputVec){
 	}else{
 		stop('ACCIDENT in vtob: length of input vector not OK: should be a power of 2\n')
 	}
+
+	return(out)
 }
 
