@@ -9,3 +9,4 @@ ibelief 1.1
 
 * Fix the bug that wtoq function could not produce an output 
      
+* Fix the bug that wtom function could not produce an output 

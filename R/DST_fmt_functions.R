@@ -347,6 +347,7 @@ wtom <- function(InputVec){
 	# in = w vector
 	# out = m vector
 	out = qtom(wtoq(InputVec));
+	return(out)
 }
 
 ##' @export
