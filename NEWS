@@ -1,0 +1,11 @@
+ibelief 1.1
+--------------------------------------------------------------------------------
+
+* Add the function LCRule for creating bba from probabilities using Least-Commit Princple
+  
+* Change the form of the input and output mass matrix for function discounting. Now for both the input and output mass matrix, each columb is a bba. If there is only one bba to discount, the input and output bbas are both vectors. 
+   
+* Fix the bug that qtow function could not work for dogmatic belief functions. 
+
+* Fix the bug that wtoq function could not produce an output 
+     

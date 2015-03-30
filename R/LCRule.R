@@ -1,12 +1,12 @@
 ##' Least-Committed  Rules for creating bbas
 ##'
 ##' @export
-##' @param Mat matirx, \eqn{m \times k}, \eqn{m} is the number of sources, \eqn{k} is the length of probability vectors.
-##' @return mass_bba matrix, \eqn{m \times 2^k}, each row is a bba.
+##' @param Mat matirx, \eqn{m \times k}, \eqn{m} is the number of sources, \eqn{k} is the length of probability vectors. If the numer of sources is 1, the input probabiltiy could be a vector. 
+##' @return mass_bba matrix, \eqn{m \times 2^k}, each column is a bba. If there is only one source, the output is a bba vector.
 ##' @examples
 ##' pro1 = c(0.25, 0.25, 0.25, 0.25);
 ##' pro2 = c(0.3, 0.2, 0.2, 0.1);
-##' pro3 = rbind(pro1, pro2)
+##' pro3 = rbind(pro1, pro2);
 ##' 
 ##' LCRule(pro1)
 ##' LCRule(pro2)
@@ -19,7 +19,7 @@ LCRule <- function(Mat) {
     
     # Input: Mat, matirx, m*k, m is the number of sources, k is the length of pro.vectors.
     
-    # Output: mass_bba, matrix, m*2^k, each row is a bba.
+    # Output: mass_bba, matrix, 2^k * m, each column is a bba.
     
     if (is.null(nrow(Mat))) {
         Mat = matrix(Mat, 1)
@@ -65,6 +65,7 @@ LCRule <- function(Mat) {
         }
         mass_bba[j, credal_order] = mass
     }
-    
+	mass_bba = t(mass_bba)
+    if(ncol(mass_bba) == 1) mass_bba = as.vector(mass_bba) 
     return(mass_bba)
 } 

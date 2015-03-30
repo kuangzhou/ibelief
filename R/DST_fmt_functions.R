@@ -318,23 +318,23 @@ qtow <- function(InputVec){
 		if(InputVec[lm] > 0){
 			out = exp(-(qtom(log(InputVec))));
 			out[lm] = 1;
-		}else
-			stop('Accident in qtow: algorithm works only if q(lm) > 0\n')
-			stop('I nevertheless try to compute it, I add an epsilon to m(lm)\n')
-			stop('No garantee it is really OK\n')
-			mini=1;
+		}else{
+			cat('Accident in qtow: algorithm works only if q(lm) > 0\n')
+			cat('add an epsilon to m(lm)\n')
+			cat('No garantee it is really OK\n')
+			mini = 1;
 			for (i in 1:lm){
-				if (InputVec[i]>0){
-					mini=min(mini,InputVec[i]);
+				if (InputVec[i] > 0){
+					mini = min(mini,InputVec[i]);
 				}
 			}
-			mini=mini/10000000000;
+			mini = mini / 10000000000;
 			for(i in 1:lm){
-			  InputVec[i]=max(InputVec[i],mini);
+			  InputVec[i] = max(InputVec[i],mini);
 			}
 			out = exp(-(qtom(log(InputVec))));
 			out[lm] = 1;
-		end
+		}
 	}else{
 		stop('ACCIDENT in qtow: length of input vector not OK: should be a power of 2\n');
 	}
@@ -361,11 +361,13 @@ wtoq <- function(InputVec){
 		if(min(InputVec)>0){
 			out = prod(InputVec)/exp(mtoq(log(InputVec)));
 		}else{
-		stop('accident in wtoq: one of the weigths are non positive\n')
+    		stop('accident in wtoq: one of the weigths are non positive\n')
 		}
 	}else{
 		stop('ACCIDENT in wtoq: length of input vector not OK: should be a power of 2\n')
 	}
+
+	return(out)
 }
 
 

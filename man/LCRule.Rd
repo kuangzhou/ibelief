@@ -6,10 +6,10 @@
 LCRule(Mat)
 }
 \arguments{
-\item{Mat}{matirx, \eqn{m \times k}, \eqn{m} is the number of sources, \eqn{k} is the length of probability vectors.}
+\item{Mat}{matirx, \eqn{m \times k}, \eqn{m} is the number of sources, \eqn{k} is the length of probability vectors. If the numer of sources is 1, the input probabiltiy could be a vector.}
 }
 \value{
-mass_bba matrix, \eqn{m \times 2^k}, each row is a bba.
+mass_bba matrix, \eqn{m \times 2^k}, each column is a bba. If there is only one source, the output is a bba vector.
 }
 \description{
 Least-Committed  Rules for creating bbas
@@ -17,7 +17,7 @@ Least-Committed  Rules for creating bbas
 \examples{
 pro1 = c(0.25, 0.25, 0.25, 0.25);
 pro2 = c(0.3, 0.2, 0.2, 0.1);
-pro3 = rbind(pro1, pro2)
+pro3 = rbind(pro1, pro2);
 
 LCRule(pro1)
 LCRule(pro2)

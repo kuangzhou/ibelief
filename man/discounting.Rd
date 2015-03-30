@@ -6,12 +6,12 @@
 discounting(MassIn, alpha)
 }
 \arguments{
-\item{MassIn}{Matrix with \eqn{2^n} rows and \eqn{nb} columns. Parameter \eqn{n} is the number of classes and \eqn{nb} is the number of experts.}
+\item{MassIn}{Matrix with \eqn{nb} columns and \eqn{2^n} rows. Parameter \eqn{n} is the number of elements in the discernment frame and \eqn{nb} is the number of experts. Each column is a bba. If there is only one bba, the input could be a vector with length \eqn{2^n}.}
 
-\item{alpha}{Discounting factor. A number or a vector with length of \code{ncol(MassIn)}}
+\item{alpha}{Discounting factor. A number or a vector with length of \code{ncol(MassIn)}. If it is a number, all the bbas will be discounted using the same factor. If it is a vector with length \code{ncol{MassIn}}, the bbas will be discounted using the corresponding factor.}
 }
 \value{
-Mass matrix. The discounted masses, each column is a piece of mass
+Mass matrix with the same dimension as MassIn. The discounted masses, each column is a piece of mass. If the input is a vector, the output is also a vector.
 }
 \description{
 Discount masses using  given factors
