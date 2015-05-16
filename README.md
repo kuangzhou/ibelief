@@ -29,4 +29,4 @@ install.packages("~/ibelief_*.tar.gz", repos = NULL, type = "source")
 
 ## Change information
 
-see the NEWS file
+see the [NEWS](http://cran.r-project.org/web/packages/ibelief/NEWS) file
