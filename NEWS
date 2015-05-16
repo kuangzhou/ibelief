@@ -1,7 +1,7 @@
 ibelief 1.1
 --------------------------------------------------------------------------------
 
-* Add the function LCRule for creating bbas from probabilities using Least-Commit Principle.
+* Add the function LCRule for creating bbas from probabilities using Least-Committed Principle.
   
 * Change the form of the input/output mass matrix for function discounting. Now for both the input and output mass matrices, each column is a bba. If there is only one bba to discount, the input and output bbas are both vectors. 
    
