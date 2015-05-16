@@ -16,7 +16,7 @@ install.packages('ibelief', dependencies = TRUE)
 Also you can download the newest source folder of the package from [GitHub](https://github.com/kuangzhou/ibelief) and build the package yhurselves:
 
 ```bash
-git clone https://github.com/KuangZHOU/ibelief.git
+git clone https://github.com/kuangzhou/ibelief.git
 R CMD build ibelief
 R CMD INSTALL ibelief_*.tar.gz
 ```
