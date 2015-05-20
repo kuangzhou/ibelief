@@ -10,7 +10,7 @@ You can install the stable version on
 [CRAN](http://cran.rstudio.com/package=ibelief):
 
 ```r
-install.packages('ibelief', dependencies = TRUE)
+install.packages("ibelief", dependencies = TRUE)
 ```
 
 Also you can download the newest source folder of the package from [GitHub](https://github.com/kuangzhou/ibelief), and build the package yourselves:
