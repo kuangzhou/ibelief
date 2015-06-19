@@ -1,7 +1,11 @@
 Package: ibelief
 Type: Package
 Title: Belief Function Implementation
+<<<<<<< HEAD
 Version: 1.2
+=======
+Version: 1.1
+>>>>>>> f9fb25b11e2bed513a999500644c9415ed19acc9
 Author: Kuang Zhou <kzhoumath@163.com>; Arnaud Martin
     <arnaud.martin@univ-rennes1.fr>
 Maintainer: Kuang Zhou <kzhoumath@163.com>

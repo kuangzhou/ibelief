@@ -8,6 +8,7 @@ ibelief 1.1
 * Fix the bug that qtow function could not work for dogmatic belief functions. 
 
 * Fix the bug that some FMT functions could not produce an output. 
+<<<<<<< HEAD
 
 
 ibelief 1.2
@@ -16,4 +17,6 @@ ibelief 1.2
 * Change the form of the output vector for the combined mass in DST function. Now the output for all the type of bba generated is a column vector.    
 
 * Fix the bug of RandomMass function brought by the base::sample function. 
+=======
+>>>>>>> f9fb25b11e2bed513a999500644c9415ed19acc9
      
