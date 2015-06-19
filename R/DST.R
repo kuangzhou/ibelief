@@ -157,20 +157,12 @@ DST <- function(MassIn,criterion){
 			Mass=vtom(v);
 		}else if (case==12){
 			# mean of the masses
-<<<<<<< HEAD
 			 Mass= apply(MassIn,1,mean);
-=======
-			 Mass=apply(t(MassIn),2,mean);
->>>>>>> f9fb25b11e2bed513a999500644c9415ed19acc9
 		 
 		}else{
 			stop('Accident: in DST choose of criterion: uncorrect\n');
         }
-<<<<<<< HEAD
 	return(matrix(Mass,,1))
-=======
-	return(t(Mass))
->>>>>>> f9fb25b11e2bed513a999500644c9415ed19acc9
 }
 
 
