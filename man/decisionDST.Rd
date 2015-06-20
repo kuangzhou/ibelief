@@ -8,7 +8,7 @@ decisionDST(mass, criterion, r = 0.5)
 \arguments{
 \item{mass}{The matrix containing the masses. Each column represents a piece of mass.}
 
-\item{criterion}{The decison baseline:
+\item{criterion}{The decision baseline:
 
     criterion=1 maximum of the plausibility
 

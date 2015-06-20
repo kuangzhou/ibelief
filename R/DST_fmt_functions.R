@@ -5,7 +5,7 @@
 ##' @export
 mtobetp  <-  function(InputVec) {
     # computing BetP on the signal points from the m vector (InputVec) out = BetP
-    # vector beware: not optimalize, so can be slow for >10 atoms
+    # vector beware: not optimize, so can be slow for >10 atoms
     
     # the length of the power set, f
     mf = length(InputVec)

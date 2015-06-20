@@ -3,7 +3,7 @@
 ##' Different rules for making decisions in the framework of belief functions
 ##' @export
 ##' @param mass The matrix containing the masses. Each column represents a piece of mass.
-##' @param criterion The decison baseline:
+##' @param criterion The decision baseline:
 ##'
 ##'     criterion=1 maximum of the plausibility
 ##'

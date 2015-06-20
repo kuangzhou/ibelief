@@ -6,7 +6,7 @@
 LCRule(Mat)
 }
 \arguments{
-\item{Mat}{matirx, \eqn{m \times k}, \eqn{m} is the number of sources, \eqn{k} is the length of probability vectors. If the numer of sources is 1, the input probabiltiy could be a vector.}
+\item{Mat}{matrix, \eqn{m \times k}, \eqn{m} is the number of sources, \eqn{k} is the length of probability vectors. If the number of sources is 1, the input probability could be a vector.}
 }
 \value{
 mass_bba matrix, \eqn{m \times 2^k}, each column is a bba. If there is only one source, the output is a bba vector.

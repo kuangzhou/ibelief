@@ -30,7 +30,7 @@ discounting <- function(MassIn, alpha){
     
 	natoms = round(log2(mm)); 		
 	if(2^natoms != mm || mm == 2){
-	  stop('The numer of focal element should be 2^n (n>1), with n the number of elements in the discernment frame\n')
+	  stop('The number of focal element should be 2^n (n>1), with n the number of elements in the discernment frame\n')
 	}
     if(length(alpha) == 1){
 	   alpha = rep(alpha, nn);
@@ -43,7 +43,7 @@ discounting <- function(MassIn, alpha){
 		if(ncol(Mass) == 1) Mass = as.vector(Mass)
 		return(Mass)
 	}else{
-		stop('Accident: in discounting the size of alpha is uncorrect\n')
+		stop('Accident: in discounting the size of alpha is incorrect\n')
 	}
 
 

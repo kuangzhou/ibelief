@@ -1,5 +1,5 @@
 BayesianMass <- function(lambda,r,n){
-	# n = size of discernement space.
+	# n = size of discernment space.
 	# 
 	if(n<=1){ 
 		stop('error in Bayesian Mass\n')

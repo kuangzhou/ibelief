@@ -11,7 +11,7 @@ piece of mass.}
 
 \item{criterion}{The combination criterion:
 
-criterion=1 Smets criterion
+criterion=1 Smets criterion (conjunctive combination rule)
 
 criterion=2 Dempster-Shafer criterion (normalized)
 
