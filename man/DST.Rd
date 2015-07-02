@@ -3,7 +3,7 @@
 \alias{DST}
 \title{Combination rules}
 \usage{
-DST(MassIn, criterion)
+DST(MassIn, criterion, TypeSSF = 0)
 }
 \arguments{
 \item{MassIn}{The matrix containing the masses. Each column represents a
@@ -21,7 +21,7 @@ criterion=4 Disjunctive combination criterion
 
 criterion=5 Dubois criterion (normalized and disjunctive combination)
 
-criterion=6 Dubois and Prade criterion (mixt combination)
+criterion=6 Dubois and Prade criterion (mixt combination), only for Bayesian masses whose focal elements are singletons
 
 criterion=7 Florea criterion
 
@@ -29,11 +29,17 @@ criterion=8 PCR6
 
 criterion=9 Cautious Denoeux Min for functions non-dogmatics
 
-criterion=10 Cautious Denoeux Max for separable functions
+criterion=10 Cautious Denoeux Max for separable masses
 
 criterion=11 Hard Denoeux for functions non-normales
 
-criterion=12 Mean of the bbas}
+criterion=12 Mean of the bbas
+
+criterion=13 LNS rule, for separable masses
+
+criterion=131 LNSa rule, for separable masses}
+
+\item{TypeSSF}{If TypeSSF = 0, it is not a SSF, the general case. If TypeSSF = 1, a SSF with a singleton as a focal element. If TypeSSF = 2, a SSF with any subset of \eqn{\Theta} as a focal element.}
 }
 \value{
 The combined mass vector. One column.
@@ -52,5 +58,21 @@ M_comb_Smets=DST(cbind(m1,m2,m3d),1);
 M_comb_Smets
 M_comb_PCR6=DST(cbind(m1,m2),8);
 M_comb_PCR6
+M_comb_LNS = DST(cbind(m1,m2),13);
+M_comb_LNS
+M_comb_LNSa = DST(cbind(m1,m2),131);
+M_comb_LNSa
+
+n1 = 5
+ThetaSize = 3
+mass_mat = matrix(0, 2^ThetaSize, n1 + 1);
+mass_mat[2, 1 : n1] = c(0.12, 0.16, 0.15, 0.11, 0.14)
+mass_mat[3, n1 + 1] = 0.95;
+mass_mat[8, ] = 1 - colSums(mass_mat)
+mass_ssf_mat = mass_mat[c(2^(1:ThetaSize-1)+1, 8), ]
+# the following three functions could produce the same results
+DST(mass_mat, 13)
+DST(mass_mat, 13, TypeSSF = 2)
+DST(mass_ssf_mat, 13, TypeSSF = 1)
 }
 
