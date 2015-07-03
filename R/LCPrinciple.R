@@ -1,4 +1,4 @@
-##' Least-Committed  Rules for creating bbas
+##' Least-Committed  Principle for creating bbas
 ##'
 ##' @export
 ##' @param Mat matrix, \eqn{m \times k}, \eqn{m} is the number of sources, \eqn{k} is the length of probability vectors. If the number of sources is 1, the input probability could be a vector. 
@@ -8,12 +8,12 @@
 ##' pro2 = c(0.3, 0.2, 0.2, 0.1);
 ##' pro3 = rbind(pro1, pro2);
 ##' 
-##' LCRule(pro1)
-##' LCRule(pro2)
-##' LCRule(pro3)
+##' LCPrincple(pro1)
+##' LCPrincple(pro2)
+##' LCPrincple(pro3)
 ##'
 
-LCRule <- function(Mat) {
+LCPrincple <- function(Mat) {
     
     # From probability to bbas using Least-Committed principle
     

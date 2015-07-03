@@ -2,7 +2,7 @@
 
 export(ConflictTable)
 export(DST)
-export(LCRule)
+export(LCPrincple)
 export(PCR6)
 export(RandomMass)
 export(beltob)

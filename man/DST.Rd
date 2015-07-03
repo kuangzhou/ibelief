@@ -31,7 +31,7 @@ criterion=9 Cautious Denoeux Min for functions non-dogmatics
 
 criterion=10 Cautious Denoeux Max for separable masses
 
-criterion=11 Hard Denoeux for functions non-normales
+criterion=11 Hard Denoeux for functions sub-normal
 
 criterion=12 Mean of the bbas
 
