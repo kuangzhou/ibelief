@@ -32,6 +32,11 @@ or install the package from source in R:
 install.packages("~/ibelief_*.tar.gz", repos = NULL, type = "source")
 ```
 
-## Change information
+## Change information 
 
-see the [NEWS](http://cran.r-project.org/web/packages/ibelief/NEWS) file
+### For the stable version on CRAN
+
+see the [NEWS-CRAN](http://cran.r-project.org/web/packages/ibelief/NEWS) file
+
+### For the latest beta version on GitHub 
+see the [NEWS-BETA](https://raw.githubusercontent.com/kuangzhou/ibelief/master/NEWS) file
