@@ -173,7 +173,7 @@ DST <- function(MassIn, criterion, TypeSSF = 0){
 			if(TypeSSF == 0){
 			  Mass = tCombine(MassIn, approximate = TRUE)
 			}else if(TypeSSF == 1){
-			  Mass = tCombine_SSF(MassIn, mygamma = 1, approximate = TRUE, signleton = TRUE)
+			  Mass = tCombine_SSF(MassIn, mygamma = 1, approximate = TRUE, singleton = TRUE)
 			}else if(TypeSSF == 2){
 			  Mass = tCombine_SSF(MassIn, mygamma = 1, approximate = TRUE)
 			}
