@@ -1,0 +1,27 @@
+ibelief 1.1
+--------------------------------------------------------------------------------
+
+* Add the function LCRule for creating bbas from probabilities using Least-Committed Principle.
+  
+* Change the form of the input/output mass matrix for function discounting. Now for both the input and output mass matrices, each column is a bba. If there is only one bba to discount, the input and output bbas are both vectors. 
+   
+* Fix the bug that qtow function could not work for dogmatic belief functions. 
+
+* Fix the bug that some FMT functions could not produce an output. 
+
+
+ibelief 1.2
+--------------------------------------------------------------------------------
+
+* Change the form of the output vector for the combined mass in DST function. Now the output for all the type of bba generated is a column vector.    
+
+* Fix the bug of RandomMass function brought by the base::sample function. 
+
+* Add three types of mass in RandomMass function, consonant bbas and non-dogmatic consonant bbas (both with nested focal elements), SSFs.
+
+* Modify the function DST to be more optimized.
+
+* In DST function, the combination rules LNS and LNSa are added.
+
+* Change the name of the function LCRule to LCPrinciple 
+     

@@ -1,0 +1,22 @@
+Package: ibelief
+Type: Package
+Title: Belief Function Implementation
+Version: 1.2
+Author: Kuang Zhou <kzhoumath@163.com>; Arnaud Martin
+    <arnaud.martin@univ-rennes1.fr>
+Maintainer: Kuang Zhou <kzhoumath@163.com>
+Description: Some basic functions to implement belief functions including:
+    transformation between belief functions using the method introduced by
+    Philippe Smets (arXiv:1304.1122 [cs.AI]), evidence combination, evidence
+    discounting, decision-making, and constructing masses. Currently, thirteen
+    combination rules and five decision rules are supported. It can also be
+    used to generate different types of random masses when working on belief
+    combination and conflict management.
+LazyData: FALSE
+Depends:
+    R (>= 3.0.2)
+License: GPL (>= 2)
+Packaged: 2015-05-15 10:44:59 UTC; zhoukuang
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-05-15 21:44:56
